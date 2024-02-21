@@ -1,4 +1,4 @@
-class BalanceException(Exception):
+class BalanceException():
     pass
 class BankAccounts:
     def __init__(self,initial_amount,accname):
