@@ -74,7 +74,7 @@ class ExcutiveFunctionality():
         for executive in ExecutiveData.executives:
             if service in executive.executives:
                 print(executive.executive_id,'\t',executive.executive_name,'\t',executive.location,'\t',executive.rating)
-    def select_theatre(self,selected_service):
+    def select_executive(self,selected_service):
         executive_id=int(input("\n Enter executive id: \n"))
         for executive in ExecutiveData.executives:
             if executive.executive_id==executive_id and selected_service in executive.services:
@@ -212,7 +212,7 @@ class HomeServices(UserFunctionality):
         if not selected_service:
             print("Invalid movie id.")
             return
-        self.service.display_info(selected_service)
+        self.executive.display_info(selected_service)
         selected_executive = self.executive.select_executive(selected_service)
         if not selected_executive:
             print("Invalid theatre id.")
