@@ -56,7 +56,7 @@ class SerivesFunctionality():
         for service in ServicesData.services:
                 print(service.service_id,'\t',service.service_name,'\t',service.cost)
     def select_service(self):
-        service_id=int(input("Enetr Movie id : \n"))
+        service_id=int(input("Enetr service id : \n"))
         for service in ServicesData.services:
             if service.service_id==service_id:
                 return service.service_name 
