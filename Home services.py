@@ -112,8 +112,8 @@ class BookingFunctionality():
     def booking_preview(self, mail_id, selected_service, selected_executive, selected_show_time, total_price):
         print("--------------------------------------------------------\n")
         print("Booking Preview:\n")
-        print(f'Movie Details: {selected_service}')
-        print(f'Theatre Name: {selected_executive}')
+        print(f'Service Details: {selected_service}')
+        print(f'Executive Name: {selected_executive}')
         print(f'Show Details: {selected_show_time}')
         print(f'Total amount: {total_price}')
         print("--------------------------------------------------------\n")
