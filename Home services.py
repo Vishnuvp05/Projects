@@ -53,7 +53,7 @@ class ServicesData():
             
 class SerivesFunctionality():
     def display_info(self):
-        for service in ServicesData.services():
+        for service in ServicesData.services:
                 print(service.service_id,'\t',service.service_name,'\t',service.cost)
     def select_service(self):
         service_id=int(input("Enetr Movie id : \n"))
