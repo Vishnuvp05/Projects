@@ -48,7 +48,7 @@ class ServicesData():
     services=[]
     def __init__(self,service_id,service_name,cost):
         self.service_id=service_id
-        self.service=service_name
+        self.service_name=service_name
         self.cost=cost
             
 class SerivesFunctionality():
